@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>MyBookList App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__logo"><h2>Awesome Books</h2></div>
+        <ul class="nav__list">
+          <li><a class="list-link" href="#">List</a></li>
+          <li><a class="add-new-link" href="#">Add New</a></li>
+          <li><a class="contact-link" href="#"> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="div-date">
+        <small class="date"></small>
+      </div>
+      <div class="container add-new">
+        <h1 class="container__h1">Add a new book</h1>
+        <form id="book-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="title"
+              class="form-control"
+              placeholder="Title"
+            />
+          </div>
+          <div class="form-group fg-author">
+            <input
+              type="text"
+              id="author"
+              class="form-control"
+              placeholder="Author"
+            />
+          </div>
+          <div class="form-group">
+            <label class="book-id" for="isbn"> ISBN# </label>
+            <input class="book-id form-control" type="text" id="isbn" />
+          </div>
+          <input class="submit-btn" type="submit" value="Add Book" />
+        </form>
+      </div>
+      <div class="list hidden">
+        <h1 class="container__h1 h1__list">All Awesome Books</h1>
+        <table class="books-table">
+          <tbody id="books-list"></tbody>
+        </table>
+      </div>
+      <div class="contact hidden">
+        <h1 class="container__h1">Contact Information</h1>
+        <div class="contact--paragraph">
+          <p>
+            Do you have any questions or you just want to say "Hello"? <br />
+            You can reach out to us!
+          </p>
+          <ul class="contact-list">
+            <li>Our e-mail mail@mail.com</li>
+            <li>Our phone number: 0443566514444</li>
+            <li>Our address StreetName 22, 52250 City, Country</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="copyright">
+        <h2>Copyright</h2>
+      </div>
+    </footer>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
