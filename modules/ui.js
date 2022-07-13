@@ -119,7 +119,6 @@ listLink.addEventListener('click', () => {
     if (!contactSection.classList.contains('hidden')) {
       contactSection.classList.add('hidden');
     }
-    console.log('God is GREAT');
   }
 });
 
